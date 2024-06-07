@@ -1,11 +1,11 @@
 import Head from "next/head";
 import Link from "next/link";
 
-export default function Home() {
+export default function About() {
     return (
         <>
             <Head>
-                <title>메인 : 투두</title>
+                <title>앱소개 : 투두</title>
                 <meta name="description" content="할일 관리 서비스" />
                 <meta
                     name="viewport"
@@ -13,10 +13,10 @@ export default function Home() {
                 />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
-            <h3>안뇽하세요.</h3>
+            <h3>앱소개 페이지</h3>
             <nav>
                 <Link href="/" legacyBehavior>
-                    <a style={{ color: "blue" }}>main</a>
+                    <a>main</a>
                 </Link>
                 <Link href="/about" legacyBehavior>
                     <a>About</a>
