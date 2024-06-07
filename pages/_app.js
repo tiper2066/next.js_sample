@@ -1,4 +1,5 @@
 import "@/styles/globals.css";
+import Head from "next/head";
 import Link from "next/link";
 
 export default function App({ Component, pageProps }) {
@@ -13,16 +14,24 @@ export default function App({ Component, pageProps }) {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <Component {...pageProps} />
-            <nav>
-                <Link href="/" legacyBehavior>
-                    <a>main</a>
-                </Link>
-                <Link href="/about" legacyBehavior>
-                    <a>About</a>
-                </Link>
-                <Link href="/contact" legacyBehavior>
-                    <a>Contact</a>
-                </Link>
+            <nav className="bg-red-500">
+                <ul className="flex">
+                    <li>
+                        <Link href="/" legacyBehavior>
+                            <a>main</a>
+                        </Link>
+                    </li>
+                    <li>
+                        <Link href="/about" legacyBehavior>
+                            <a>About</a>
+                        </Link>
+                    </li>
+                    <li>
+                        <Link href="/contact" legacyBehavior>
+                            <a>Contact</a>
+                        </Link>
+                    </li>
+                </ul>
             </nav>
         </>
     );
